@@ -1,5 +1,17 @@
 const dino = document.getElementById("dino");
 const cactus = document.getElementById("cactus");
+const buttonBunny = document.getElementById("Bunny B");
+const buttonFrog = document.getElementById("Frog B");
+const buttonCat = document.getElementById("Cat B");
+const displayText1 = document.getElementById("displayText1");
+const displayText2 = document.getElementById("displayText2");
+const displayText3 = document.getElementById("displayText3");
+let isVisible = false;
+let caton = false;
+let frogon = false;
+let bunnyon = false;
+
+
 function jump() {
     if (dino.classList != "jump") {
         dino.classList.add("jump");
@@ -25,19 +37,36 @@ let isAlive = setInterval(function () {
     }
 }, 10);
 
-document.addEventListener("keydown", function (event) {
-    jump();
-});
 
-document.getElementById("Cat B").addEventListener
-{
-    <p>cats have super quick reflexes and are quite sneaky. They have various different coat colors.</p>
-}
-document.getElementById("Frog B").addEventListener
-{
-    <p>frogs have smooth, moist skin and usually use their hind legs to jump. They are also fast swimmers.</p>
-}
-document.getElementById("Bunny B").addEventListener
-{
-    <p>bunnies are small furry animals. They are very friendly and are quite fast.</p>
-}
+
+
+buttonFrog.addEventListener("click", function() {
+    
+    frogon = !frogon;
+    if (frogon) {
+      displayText2.textContent = "Frog- frogs have smooth, moist skin and usually use their hind legs to jump. They are also fast swimmers.";
+    } else {
+      displayText2.textContent = "";
+    }
+  });
+
+buttonCat.addEventListener("click", function() {
+    
+    caton = !caton;
+    if (caton) {
+      displayText1.textContent = "Cat- cats have super quick reflexes and are quite sneaky. They have various different coat colors.";
+    } else {
+      displayText1.textContent = "";
+    }
+  });
+
+buttonBunny.addEventListener("click", function() {
+    
+    bunnyon = !bunnyon;
+    if (bunnyon) {
+      displayText3.textContent = "Bunny- bunnies are small furry animals. They are very friendly and are quite fast.";
+    } else {
+      displayText3.textContent = "";
+    }
+  });
+
