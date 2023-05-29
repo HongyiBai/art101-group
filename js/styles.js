@@ -9,6 +9,7 @@ function jump() {
         }, 300);
     }
 }
+
 let isAlive = setInterval(function () {
     //get current dino Y position
     let dinoTop = parseInt(
@@ -27,3 +28,16 @@ let isAlive = setInterval(function () {
 document.addEventListener("keydown", function (event) {
     jump();
 });
+
+document.getElementById("Cat B").addEventListener
+{
+    <p>cats have super quick reflexes and are quite sneaky. They have various different coat colors.</p>
+}
+document.getElementById("Frog B").addEventListener
+{
+    <p>frogs have smooth, moist skin and usually use their hind legs to jump. They are also fast swimmers.</p>
+}
+document.getElementById("Bunny B").addEventListener
+{
+    <p>bunnies are small furry animals. They are very friendly and are quite fast.</p>
+}
