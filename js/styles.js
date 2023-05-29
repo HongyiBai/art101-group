@@ -6,7 +6,7 @@ const buttonCat = document.getElementById("Cat B");
 const displayText1 = document.getElementById("displayText1");
 const displayText2 = document.getElementById("displayText2");
 const displayText3 = document.getElementById("displayText3");
-let isVisible = false;
+
 let caton = false;
 let frogon = false;
 let bunnyon = false;
@@ -37,8 +37,11 @@ let isAlive = setInterval(function () {
     }
 }, 10);
 
-
-
+document.addEventListener("keydown", function(event) {
+  if (event.code === "Space" && !buttonBunny.matches(":focus") && !buttonFrog.matches(":focus") && !buttonCat.matches(":focus")) {
+    jump();
+}
+});
 
 buttonFrog.addEventListener("click", function() {
     
