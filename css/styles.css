@@ -3,6 +3,8 @@
     height: 200px;
     border: 1px solid black;
     margin: auto;
+    background-image: url("../images/background.png");
+    background-size: 600px, 200px;
 }
 
 #dino {
@@ -63,4 +65,58 @@
         left: -20px;
     }
 
+}
+
+button{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50%;
+  }
+  button #CatB{
+    background-image: url("../images/Pixel\ Cat\ Ver\ 2.png");
+    background-size: cover;
+    
+  }
+
+  body{
+    background-image: linear-gradient(to right, purple, violet);
+  }
+
+
+    
+
+h1{
+    padding: 25px 50px 75px 100px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: -4px 4px #ef3550,
+                 -8px 8px #f48fb1,
+                 -12px 12px #7e57c2,
+                 -16px 16px #2196f3,
+                 -20px 20px #26c6da,
+                 -24px 24px #43a047,
+                 -28px 28px #eeff41,
+                 -32px 32px #f9a825,
+                 -36px 36px #ff5722
+}
+
+#displayText1{
+    border: #43a047;
+    border-radius: 5px;
+    color: orange;
+
+    border-radius: 50%;
 }

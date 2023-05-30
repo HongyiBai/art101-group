@@ -1,8 +1,8 @@
 const dino = document.getElementById("dino");
 const cactus = document.getElementById("cactus");
-const buttonBunny = document.getElementById("Bunny B");
-const buttonFrog = document.getElementById("Frog B");
-const buttonCat = document.getElementById("Cat B");
+const buttonBunny = document.getElementById("BunnyB");
+const buttonFrog = document.getElementById("FrogB");
+const buttonCat = document.getElementById("CatB");
 const displayText1 = document.getElementById("displayText1");
 const displayText2 = document.getElementById("displayText2");
 const displayText3 = document.getElementById("displayText3");
