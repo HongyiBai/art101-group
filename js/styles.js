@@ -6,6 +6,8 @@ const buttonCat = document.getElementById("CatB");
 const displayText1 = document.getElementById("displayText1");
 const displayText2 = document.getElementById("displayText2");
 const displayText3 = document.getElementById("displayText3");
+const gameoverscreen = document.getElementById("gameoverscreen");
+const playagain = document.getElementById("playagain");
 
 let caton = false;
 let frogon = false;
@@ -22,6 +24,29 @@ function jump() {
     }
 }
 
+function gameOver() {
+  // Clear the isAlive interval
+  clearInterval(isAlive);
+
+  // Hide the dino and cactus elements
+  dino.style.display = "none";
+  cactus.style.display = "none";
+
+  // Display the game over text and play again option
+  gameoverscreen.textContent = "Game Over!";
+  playagain.textContent = "Press Enter to play again";
+
+  // Add event listener to listen for the "Enter" key press
+  document.addEventListener("keydown", function(event) {
+    if (event.code === "Enter") {
+      // Reload the page to restart the game
+      location.reload();
+    }
+  });
+}
+
+
+
 let isAlive = setInterval(function () {
   // get current dino Y position
   let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
@@ -34,7 +59,7 @@ let isAlive = setInterval(function () {
   // detect collision
   if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
     // collision
-    alert("Game Over!");
+    gameOver();
   }
 }, 10);
 
@@ -73,4 +98,4 @@ buttonBunny.addEventListener("click", function() {
       displayText3.textContent = "";
     }
   });
-
+  
