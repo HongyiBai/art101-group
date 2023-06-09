@@ -101,4 +101,19 @@ buttonBunny.addEventListener("click", function() {
 
   //High score that displays in top right corner
   <div id="scoring" style = "position:absolute; right: 2%; top: 5%">High Score: 0 Score 0</div>
+
+  // Get the high score from localStorage or set it to 0 if it doesn't exist
+var highScore = localStorage.getItem("highScore") || 0;
+
+// Function to update the high score
+function updateHighScore(score) {
+  if (score > highScore) {
+    highScore = score;
+    localStorage.setItem("highScore", highScore);
+    document.getElementById("high-score").textContent = "High Score: " + highScore;
+  }
+}
+
+// Call the updateHighScore function with the current score value
+updateHighScore(currentScore);
   
