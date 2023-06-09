@@ -98,4 +98,7 @@ buttonBunny.addEventListener("click", function() {
       displayText3.textContent = "";
     }
   });
+
+  //High score that displays in top right corner
+  <div id="scoring" style = "position:absolute; right: 2%; top: 5%">High Score: 0 Score 0</div>
   
