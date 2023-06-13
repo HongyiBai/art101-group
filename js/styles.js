@@ -84,8 +84,8 @@ document.addEventListener("keydown", function(event) {
 });
 
 buttonFrog.addEventListener("click", function() {
-  dinoImg.src = './images/PixelCatVer1.png'
-  let imgUrl = './images/PixelCatVer1.png'
+  dinoImg.src = './images/fixedfrog.png'
+  let imgUrl = './images/fixedfrog.png'
     
   localStorage.setItem('imgUrl',JSON.stringify(imgUrl))
     frogon = !frogon;
