@@ -97,8 +97,8 @@ buttonFrog.addEventListener("click", function() {
   });
 
 buttonCat.addEventListener("click", function() {
-  dinoImg.src = './images/PixelCatVer2.png'
-  let imgUrl = './images/PixelCatVer2.png'
+  dinoImg.src = './images/PixelCatresized.png'
+  let imgUrl = './images/PixelCatresized.png'
     
     localStorage.setItem('imgUrl',JSON.stringify(imgUrl))
     caton = !caton;
