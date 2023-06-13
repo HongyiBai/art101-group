@@ -8,29 +8,45 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="css/styles.css"></link>
+    <style>
+        #dino>img{
+            width: 100%;
+            height: 100%;
+        }
 
+        #numMax{
+            position:absolute ;
+            right: 30px;
+            top: 10px;
+            color: #ef3550;
+            font-size: 25px;
+        }
+        
+    </style>
 </head>
 <body>
     <h1> Crazy Animals</h1>
 
     
     <div class = "game">
-        <div id="dino"></div>
+        <div id="dino"><img src="./images/PixelCatresized.png" alt=""></div>
         <div id="cactus"></div>
+        <span id="numMax"></span>
+        <p class="num"></p>
         <p id="gameoverscreen"></p>
         <p id="playagain"></p>
     </div>
+    <script>
 
+    </script>
+
+    <h3> Click on a animal to learn more of them and play a game!</h3>
     <button id = "CatB">Cat</button>
     <button id = "FrogB">Frog</button>
     <button id = "BunnyB">Bunny</button>
     <p id="displayText1"></p>
     <p id="displayText2"></p>
     <p id="displayText3"></p>
-
-    <div id="dialog" title="Basic dialog">
-        <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
-      </div>
 
 
     <script src= "js/styles.js"></script>
