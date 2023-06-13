@@ -73,7 +73,7 @@ buttonFrog.addEventListener("click", function() {
     
     frogon = !frogon;
     if (frogon) {
-      displayText2.textContent = "Frog- frogs have smooth, moist skin and usually use their hind legs to jump. They are also fast swimmers.";
+      displayText2.textContent = "Frog- Frogs have smooth, moist skin and usually use their hind legs to jump. They are also fast swimmers. Frog account for around 88% of extrant amphiblan sspecies. They are one of the most diverse vetebrate orders. Each frogs call is unique to it's species. FUN FROG FACTS: (1) Frogs have been on Earth for more than 200 million years, that's as far back to the dinosaur age! (2) Frogs can leap more than 20 times their body length! (3) Frogs were the first land animals to have a vocal cords! ";
     } else {
       displayText2.textContent = "";
     }
@@ -83,7 +83,7 @@ buttonCat.addEventListener("click", function() {
     
     caton = !caton;
     if (caton) {
-      displayText1.textContent = "Cat- cats have super quick reflexes and are quite sneaky. They have various different coat colors.";
+      displayText1.textContent = "Cat- Cats have super quick reflexes and are quite sneaky. They have various different coat colors. This particular cat's is a Tabby cat. Tabby cats is the type of coat usaully amongst other domestic cat breeds. It consist of patterns that naturally occur and connect. Which comes from is from their ancestor cat the African wildcat. FUN CAT FACT'S: (1) Cats share 95.6% of their genetics with tigers! (2) Cats put their rear end by you face as a sign of trust! (3) Blackie was on the Guinness World Records for being the richest cat ever. His owner left him $12.5 million in his will!   ";
     } else {
       displayText1.textContent = "";
     }
@@ -93,7 +93,7 @@ buttonBunny.addEventListener("click", function() {
     
     bunnyon = !bunnyon;
     if (bunnyon) {
-      displayText3.textContent = "Bunny- bunnies are small furry animals. They are very friendly and are quite fast.";
+      displayText3.textContent = "Bunny- bunnies are small furry animals. They are very friendly and are quite fast. There is no differance between bunny and rabbit. However there is a difference between a hare and a rabbit. FUN BUNNY FACTS: (1) A young bunny can be refered to as a kitten! (2) A male rabbit is called a buck! (3) Their teeth never stop growing!  ";
     } else {
       displayText3.textContent = "";
     }
