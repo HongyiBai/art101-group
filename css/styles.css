@@ -77,12 +77,9 @@ button{
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-  border-radius: 50%;
-}
-button #CatB{
-  background-image: url("../images/Pixel\ Cat\ Ver\ 2.png");
-  background-size: cover;
-  
+  border-radius: 12px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
 }
 
 body{
@@ -138,4 +135,14 @@ text-align: center;
 color: #ef3550;
 font-size: 25px;
 font-weight: bold;
+}
+
+h3{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: sans-serif;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: -4px 4px #ef3550,
 }
