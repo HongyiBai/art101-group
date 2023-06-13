@@ -1,4 +1,5 @@
 const dino = document.getElementById("dino");
+const dinoImg = document.querySelector('#dino>img')
 const cactus = document.getElementById("cactus");
 const buttonBunny = document.getElementById("BunnyB");
 const buttonFrog = document.getElementById("FrogB");
@@ -8,11 +9,18 @@ const displayText2 = document.getElementById("displayText2");
 const displayText3 = document.getElementById("displayText3");
 const gameoverscreen = document.getElementById("gameoverscreen");
 const playagain = document.getElementById("playagain");
+const numText = document.querySelector('.num');
+const numMax  = document.querySelector('#numMax');
 
 let caton = false;
 let frogon = false;
 let bunnyon = false;
-
+let num = 0;
+//  timer for scores
+var numjia = setInterval(() => {
+  num++
+  numMax.innerHTML = `Scores:${num}`
+}, 1000);
 
 function jump() {
     if (dino.classList != "jump") {
@@ -31,17 +39,23 @@ function gameOver() {
   // Hide the dino and cactus elements
   dino.style.display = "none";
   cactus.style.display = "none";
+  numMax.style.display = 'none'
 
   // Display the game over text and play again option
   gameoverscreen.textContent = "Game Over!";
   playagain.textContent = "Press Enter to play again";
+  
+  numText.innerHTML = `Your score is<span style="margin: 0 20px;">${num}</span>!`
 
   // Add event listener to listen for the "Enter" key press
   document.addEventListener("keydown", function(event) {
     if (event.code === "Enter") {
       // Reload the page to restart the game
       location.reload();
+   
     }
+
+   
   });
 }
 
@@ -70,7 +84,10 @@ document.addEventListener("keydown", function(event) {
 });
 
 buttonFrog.addEventListener("click", function() {
+  dinoImg.src = './images/PixelCatVer1.png'
+  let imgUrl = './images/PixelCatVer1.png'
     
+  localStorage.setItem('imgUrl',JSON.stringify(imgUrl))
     frogon = !frogon;
     if (frogon) {
       displayText2.textContent = "Frog- frogs have smooth, moist skin and usually use their hind legs to jump. They are also fast swimmers.";
@@ -80,7 +97,10 @@ buttonFrog.addEventListener("click", function() {
   });
 
 buttonCat.addEventListener("click", function() {
+  dinoImg.src = './images/PixelCatVer2.png'
+  let imgUrl = './images/PixelCatVer2.png'
     
+    localStorage.setItem('imgUrl',JSON.stringify(imgUrl))
     caton = !caton;
     if (caton) {
       displayText1.textContent = "Cat- cats have super quick reflexes and are quite sneaky. They have various different coat colors.";
@@ -90,7 +110,12 @@ buttonCat.addEventListener("click", function() {
   });
 
 buttonBunny.addEventListener("click", function() {
-    
+  // Change path of img
+    dinoImg.src = './images/Bunnynew.png'
+      // Save path of img
+    let imgUrl = './images/Bunnynew.png'
+    // Save it on browser
+    localStorage.setItem('imgUrl',JSON.stringify(imgUrl))
     bunnyon = !bunnyon;
     if (bunnyon) {
       displayText3.textContent = "Bunny- bunnies are small furry animals. They are very friendly and are quite fast.";
@@ -98,22 +123,9 @@ buttonBunny.addEventListener("click", function() {
       displayText3.textContent = "";
     }
   });
-
-  //High score that displays in top right corner; may or may not work
-  //<div id="scoring" style = "position:absolute; right: 2%; top: 5%">High Score: 0 Score 0</div>
-
-  // Get the high score from localStorage or set it to 0 if it doesn't exist
-var highScore = localStorage.getItem("highScore") || 0;
-
-// Function to update the high score
-function updateHighScore(score) {
-  if (score > highScore) {
-    highScore = score;
-    localStorage.setItem("highScore", highScore);
-    document.getElementById("high-score").textContent = "High Score: " + highScore;
-  }
-}
-
-// Call the updateHighScore function with the current score value
-updateHighScore(currentScore);
+  
+  // Detect if the path of img changed
+  if (localStorage.key('imgUrl')) {
+    dinoImg.src = JSON.parse(localStorage.getItem('imgUrl'))
+  } 
   

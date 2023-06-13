@@ -8,19 +8,37 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="css/styles.css"></link>
+    <style>
+        #dino>img{
+            width: 100%;
+            height: 100%;
+        }
 
+        #numMax{
+            position:absolute ;
+            right: 30px;
+            top: 10px;
+            color: #ef3550;
+            font-size: 25px;
+        }
+        
+    </style>
 </head>
 <body>
     <h1> Crazy Animals</h1>
 
     
     <div class = "game">
-        <div id="dino"></div>
+        <div id="dino"><img src="./images/PixelCatresized.png" alt=""></div>
         <div id="cactus"></div>
+        <span id="numMax"></span>
+        <p class="num"></p>
         <p id="gameoverscreen"></p>
         <p id="playagain"></p>
-        <div id="scoring" style = "position:absolute; right: 2%; top: 5%">High Score: 0 Score 0</div>
     </div>
+    <script>
+
+    </script>
 
     <button id = "CatB">Cat</button>
     <button id = "FrogB">Frog</button>
