@@ -32,6 +32,10 @@ function jump() {
     }
 }
 
+buttonBunny.style.display = "none";
+buttonFrog.style.display = "none";
+buttonCat.style.display = "none";
+
 function gameOver() {
   // Clear the isAlive interval
   clearInterval(isAlive);
@@ -40,6 +44,11 @@ function gameOver() {
   dino.style.display = "none";
   cactus.style.display = "none";
   numMax.style.display = 'none'
+
+  // Show the character buttons
+  buttonBunny.style.display = "block";
+  buttonFrog.style.display = "block";
+  buttonCat.style.display = "block";
 
   // Display the game over text and play again option
   gameoverscreen.textContent = "Game Over!";
@@ -53,9 +62,7 @@ function gameOver() {
       // Reload the page to restart the game
       location.reload();
    
-    }
-
-   
+    }   
   });
 }
 
