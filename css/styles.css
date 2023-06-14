@@ -159,5 +159,36 @@ h3{
   color: #fff;
   text-shadow: -4px 4px #ef3550,
 }
+img.babycat{
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  position:absolute;
+  margin-left: 600px;
+  margin-top: -65px;
+  transform: rotate(-17deg);
 
+}
+
+img.babybunny{
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  position:absolute;
+  margin-left: 400px;
+  margin-top: -65px;
+  transform: rotate(-12deg);
+
+}
+
+
+img.babyfrog{
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  position:absolute;
+  margin-left: 850px;
+  margin-top: -90px;
+
+}
 

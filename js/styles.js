@@ -110,7 +110,7 @@ buttonCat.addEventListener("click", function() {
     localStorage.setItem('imgUrl',JSON.stringify(imgUrl))
     caton = !caton;
     if (caton) {
-      displayText1.textContent = "Cat- Cats have super quick reflexes and are quite sneaky. They have various different coat colors. This particular cat's is a Tabby cat. Tabby cats is the type of coat usaully amongst other domestic cat breeds. It consist of patterns that naturally occur and connect. Which comes from is from their ancestor cat the African wildcat. FUN CAT FACT'S: (1) Cats share 95.6% of their genetics with tigers! (2) Cats put their rear end by you face as a sign of trust! (3) Blackie was on the Guinness World Records for being the richest cat ever. His owner left him $12.5 million in his will!   ";
+      displayText1.textContent = "Cat- Cats have super quick reflexes and are quite sneaky. They have various different coat colors. This particular cat's is a Tabby cat. Tabby cats is the type of coat usaully amongst other domestic cat breeds. It consist of patterns that naturally occur and connect. Which comes from is from their ancestor cat the African wildcat. FUN CAT FACT'S: (1) Cats share 95.6% of their genetics with tigers! (2) Cats put their rear end by you face as a sign of trust! (3) Blackie was on the Guinness World Records for being the richest cat ever. His owner left him $12.5 million in his will!";
     } else {
       displayText1.textContent = "";
     }
