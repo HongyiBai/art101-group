@@ -1,7 +1,7 @@
 .game {
   width: 600px;
   height: 200px;
-  border: 4px solid black;
+  border: 4px solid rgb(255, 255, 255);
   margin: auto;
   background-image: url("../images/background.png");
   background-size: 600px, 200px;
@@ -78,12 +78,12 @@
 #BunnyB,
 #FrogB,
 #CatB{
-  background-color: #11b97b;
+  background-color: #b91111;
   width: 50px;
   float: left;
   border: none;
   top: 10px;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 2px;
   text-align: center;
   text-decoration: none;
@@ -95,7 +95,8 @@
 }
 
 body{
-background-image: url("../images/paper.png");}
+  background-image: linear-gradient(to right, rgb(82, 246, 240), rgb(43, 247, 145));
+}
 
 
   
@@ -110,6 +111,7 @@ h1{
   letter-spacing: 0.15rem;
   text-transform: uppercase;
   color: #fff;
+  animation: flicker 0.2s,infinite alternate;
   text-shadow: -4px 4px #ef3550,
                -8px 8px #f48fb1,
                -12px 12px #7e57c2,
@@ -119,25 +121,76 @@ h1{
                -28px 28px #eeff41,
                -32px 32px #f9a825,
                -36px 36px #ff5722
+  
 }
+              
+              @keyframes flicker {
+                50% {
+                  opacity: 1000;
+                }
+                50% {
+                  opacity: 50;
+                  text-shadow: none;
+                }
+                100% {
+                  opacity: 1000;
+                  text-shadow: 0 0 10px #ff00b3;
+                }
+              }
+                
+              @keyframes laserBeam {
+                30% {
+                  opacity: 1 var(10)
+                  transform scaleY var (10) ;
+                }
+              } 
+              
+              h1 {
+                  color: #de05f2;
+                  background-color: #fff9f9a4;
+                  position: relative;
+                  font-size: 40px;
+                  font-family: 'Arial', sans-serif;
+                  color: #55ff00;
+                  text-shadow: 10px #FF0000;
+                  animation: flicker .0001s infinite alternate;
+                }
+                
+                @keyframes flicker {
+                  50% {
+                    opacity: 1000;
+                  }
+                  50% {
+                    opacity: 50;
+                    text-shadow: none;
+                  }
+                  100% {
+                    opacity: 1;
+                    text-shadow: 0 0 10px #ff00b3;
+                  }
+                
+                  
+                } 
+               
+
 
 
 
 #gameoverscreen{
 text-align: center;
-color: #ef3550;
+color: #de1818;
 font-size: 25px;
 font-weight: bold;
 }
 .num{
 text-align: center;
-color: #ef3550;
+color:#cf0707;
 font-size: 25px;
 font-weight: bold;
 }
 #playagain{
 text-align: center;
-color: #ef3550;
+color: #07b1cf;
 font-size: 25px;
 font-weight: bold;
 }
@@ -148,7 +201,7 @@ h3{
   margin-bottom: 50px;
   font-family: sans-serif;
   letter-spacing: 0.15rem;
-  color: #000000;
+  color: #fffdfd;
   padding-bottom: 40px;
 }
 img.babycat{
@@ -187,8 +240,8 @@ img.babyfrog{
 .container{
   padding: 50px;
   margin-bottom: 50px;
-  border: solid 1px #0b8617;
-  background-color: #ffffff8c;
+  border: solid 1px #ffffff;
+  background-color: #fff9f9a4;
   margin-top: 30px;
 }
 
@@ -196,6 +249,6 @@ img.babyfrog{
 h4{
   text-align: center;
   font-family: sans-serif;
-  letter-spacing: 0.15rem;
-  color: #000000;
+  letter-spacing: 0.150rem;
+  color: #ffffff;
 }
