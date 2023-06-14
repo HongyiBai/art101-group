@@ -122,6 +122,7 @@ h1{
                -36px 36px #ff5722
 }
 
+
 #displayText1{
   border: #43a047;
   border-radius: 5px;
@@ -150,6 +151,7 @@ font-weight: bold;
 }
 
 h3{
+  text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
   font-family: sans-serif;
