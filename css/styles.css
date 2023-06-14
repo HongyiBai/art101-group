@@ -3,7 +3,7 @@
   height: 200px;
   border: 4px solid black;
   margin: auto;
-  background-color: rgb(192, 192, 192);
+  background-image: url("../images/background.png");
   background-size: 600px, 200px;
   position: relative;
 }
@@ -95,8 +95,7 @@
 }
 
 body{
-  background-image: linear-gradient(to right, purple, violet);
-}
+background-image: url("../images/paper.png");}
 
 
   
@@ -123,13 +122,6 @@ h1{
 }
 
 
-#displayText1{
-  border: #43a047;
-  border-radius: 5px;
-  color: orange;
-
-  border-radius: 50%;
-}
 
 #gameoverscreen{
 text-align: center;
@@ -152,12 +144,12 @@ font-weight: bold;
 
 h3{
   text-align: center;
-  margin-top: 50px;
+  margin-top: -40px;
   margin-bottom: 50px;
   font-family: sans-serif;
   letter-spacing: 0.15rem;
-  color: #fff;
-  text-shadow: -4px 4px #ef3550,
+  color: #000000;
+  padding-bottom: 40px;
 }
 img.babycat{
   width: 150px;
@@ -192,3 +184,18 @@ img.babyfrog{
 
 }
 
+.container{
+  padding: 50px;
+  margin-bottom: 50px;
+  border: solid 1px #0b8617;
+  background-color: #ffffff8c;
+  margin-top: 30px;
+}
+
+
+h4{
+  text-align: center;
+  font-family: sans-serif;
+  letter-spacing: 0.15rem;
+  color: #000000;
+}
