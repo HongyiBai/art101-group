@@ -52,7 +52,7 @@ function gameOver() {
 
   // Display the game over text and play again option
   gameoverscreen.textContent = "Game Over!";
-  playagain.textContent = "Press Enter to play again";
+  playagain.textContent = "click on a animal & Press Enter to play again";
   
   numText.innerHTML = `Your score is<span style="margin: 0 20px;">${num}</span>!`
 
