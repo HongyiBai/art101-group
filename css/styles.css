@@ -95,7 +95,8 @@
 }
 
 body{
-  background-image: url("../images/backgroundv2.png");
+  background-image: url("../images/IMG_9312.JPG");
+  background-size: cover;
 }
 
   
@@ -199,7 +200,7 @@ h3{
   margin-bottom: 50px;
   font-family: sans-serif;
   letter-spacing: 0.15rem;
-  color: #000000;
+  color: #b0238d;
   padding-bottom: 40px;
 }
 img.babycat{
@@ -248,5 +249,5 @@ h4{
   text-align: center;
   font-family: sans-serif;
   letter-spacing: 0.150rem;
-  color: #000000;
+  color: #284bb3;
 }
